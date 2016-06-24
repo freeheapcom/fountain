@@ -1,0 +1,23 @@
+buildscript {
+    repositories { jcenter() }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.2'
+    }
+}
+
+
+allprojects {
+  apply plugin: 'java'
+  apply plugin: 'eclipse'
+  apply plugin: 'eclipse-wtp'
+  apply plugin: 'idea'
+  apply plugin: 'com.github.johnrengelman.shadow'
+
+  repositories {
+    jcenter()
+    mavenCentral()
+    mavenCentral name: "Ooyala Bintray", artifactUrls: ["http://dl.bintray.com/spark-jobserver/maven/"]
+  }
+
+}
+

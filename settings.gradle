@@ -1,0 +1,9 @@
+rootProject.name='fountain-root'
+
+include 'common'
+include 'datastore'
+include 'fountain'
+
+project(":datastore").name = 'datastore'
+project(":common").name = 'common'
+project(":fountain").name = 'fountain'
