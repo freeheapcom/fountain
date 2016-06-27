@@ -2,8 +2,8 @@ rootProject.name='fountain-root'
 
 include 'common'
 include 'datastore'
-include 'fountain'
+include 'crawler'
 
 project(":datastore").name = 'datastore'
 project(":common").name = 'common'
-project(":fountain").name = 'fountain'
+project(":crawler").name = 'crawler'
