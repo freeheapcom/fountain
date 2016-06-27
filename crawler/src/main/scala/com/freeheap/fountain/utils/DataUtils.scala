@@ -21,7 +21,6 @@ object DataUtils {
   val redis = RedisClient()
 
   def load(filename: String) : Unit = {
-    //val filename = "data/urls.txt"
     for (line <- Source.fromFile(filename).getLines()) {
       println(line)
       val r = redis.sadd(SOURCE, line)
